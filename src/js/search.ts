@@ -6,12 +6,10 @@ interface Song {
 class SongSearch {
     private songs: Song[];
     private searchInput: HTMLInputElement;
-    private songGrid: HTMLElement;
 
     constructor() {
         this.songs = this.getAllSongs();
         this.searchInput = document.querySelector('input[type="search"]') as HTMLInputElement;
-        this.songGrid = document.querySelector('.grid') as HTMLElement;
         this.initializeSearch();
     }
 

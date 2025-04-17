@@ -3,7 +3,6 @@ class SongSearch {
     constructor() {
         this.songs = this.getAllSongs();
         this.searchInput = document.querySelector('input[type="search"]');
-        this.songGrid = document.querySelector('.grid');
         this.initializeSearch();
     }
     getAllSongs() {
